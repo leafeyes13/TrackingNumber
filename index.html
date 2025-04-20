@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Search App</title>
+    <style>
+
+
+body {
+	background-color: #000000; /* Sets the entire page background to black */
+	padding: 50px;
+}
+
+.content-box {
+    background-color: white;
+    padding: 80px; /* Increased padding */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px; /* Adds extra space below subtitle */
+    line-height: 1.5; /* Adds spacing between lines */
+}
+
+.subtitle {
+    font-size: 18px;
+    font-weight: light;
+    margin-bottom: 30px; /* Adds extra space below subtitle */
+    line-height: 1.5; /* Adds spacing between lines */
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers input and button */
+    gap: 15px; /* Adds space between them */
+}
+
+button {
+    font-size: 18px;
+    padding: 12px 20px;
+    width: 200px;
+}
+
+#results div {
+    font-size: 24px; /* Size for individual result entries */
+    line-height: 3; /* Adds spacing between lines */
+    padding: 30px; /* Increased padding */
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+</style>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    
+    <script src="script.js"></script>
+
+<div class="content-box">
+	<h1 class="title">Tracking Number</h1>
+	<h2 class="subtitle">ค้นหาเลข tracking ด้วยอีเมลที่ช่องด้านล่างนี้ (อีเมลเดียวกับที่ได้รับฟอร์มชำระเงิน)<br> ตัวอย่าง: XX@gmail.com</h2>
+
+<div class="input-container">
+    <input type="text" id="search-input" class="form-control input-lg">
+    <button class="btn btn-primary btn-lg mt-2" onclick="searchItems()">Search</button>
+</div>
+
+<div id="results"></div>
+
+
+</div>
+
+
+</body>
+</html>
